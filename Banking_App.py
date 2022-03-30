@@ -1,4 +1,3 @@
-import math
 import datetime
 
 
@@ -11,7 +10,6 @@ class BankingApp:
     print(f"Current Balance: {init_deposit}")
 
     def write_changes(self, change, new_balance):
-        # writes newly calculated balance to ledger file
         ledger = open("account_ledger.txt", "a")
         ledger.write(change)
         new_balance_str = "\n {0:.2f} \n".format(
